@@ -66,7 +66,6 @@ func GetSaveSaets(act string, token string) string {
 	}
 
 	if data.StatusCode != 1000 {
-		log.Println(data)
 		return ""
 	}
 	return data.Result
@@ -110,7 +109,7 @@ func GetSaveSeats(act string, token string, payload config.RestaurantConfig) str
 	}
 
 	if data.StatusCode != 1000 {
-		// log.Println(data.Result.Msg)
+		log.Println(data.Result.Msg)
 		return ""
 	}
 
