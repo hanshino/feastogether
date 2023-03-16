@@ -11,7 +11,6 @@
 ```bash
 git clone https://github.com/zhong1016/feastogether.git
 cd ./feastogether
-go mod download
 ```
 
 修改 config.ini 相關資料
@@ -19,6 +18,7 @@ go mod download
 執行程式 :
 
 ```bash
+go mod download
 go run main.go
 ```
 
