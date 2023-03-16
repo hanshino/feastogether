@@ -11,6 +11,7 @@
 ```bash
 git clone https://github.com/zhong1016/feastogether.git
 cd ./feastogether
+go mod download
 ```
 
 修改 config.ini 相關資料
@@ -19,6 +20,13 @@ cd ./feastogether
 
 ```bash
 go run main.go
+```
+
+Docker :
+
+```bash
+docker build -t feastogether .
+docker run --rm -it feastogether
 ```
 
 ### 目錄結構 ✨
