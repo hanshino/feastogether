@@ -66,6 +66,7 @@ func GetSaveSaets(act string, token string) string {
 	}
 
 	if data.StatusCode != 1000 {
+		log.Println(data)
 		return ""
 	}
 	return data.Result
