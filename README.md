@@ -12,6 +12,14 @@
 git clone https://github.com/zhong1016/feastogether.git
 cd ./feastogether
 ```
+Docker :
+
+```bash
+docker build -t feastogether .
+docker run --rm -it feastogether
+```
+
+Local :
 
 下載相關依賴
 ```bash
@@ -26,12 +34,6 @@ go mod download
 go run main.go
 ```
 
-Docker :
-
-```bash
-docker build -t feastogether .
-docker run --rm -it feastogether
-```
 
 ### 目錄結構 ✨
 
