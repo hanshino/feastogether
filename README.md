@@ -13,12 +13,16 @@ git clone https://github.com/zhong1016/feastogether.git
 cd ./feastogether
 ```
 
+下載相關依賴
+```bash
+go mod download
+```
+
 修改 config.ini 相關資料
 
 執行程式 :
 
 ```bash
-go mod download
 go run main.go
 ```
 
