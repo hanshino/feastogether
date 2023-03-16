@@ -16,7 +16,7 @@ func main() {
 	}
 
 	// 取得 token
-	token := client.GetTokne(cfg.UserConfig)
+	token := client.GetToken(cfg.UserConfig)
 	if token == "" {
 		return
 	}
@@ -32,7 +32,7 @@ func main() {
 		// 確認定位
 		msg := client.SaveBooking(
 			cfg.UserConfig.Account,
-			client.GetTokne(cfg.UserConfig),
+			client.GetToken(cfg.UserConfig),
 			cfg.RestaurantConfig)
 
 		fmt.Println(msg)

@@ -16,7 +16,7 @@ const (
 )
 
 // 取得 Token
-func GetTokne(user config.UserConfig) string {
+func GetToken(user config.UserConfig) string {
 
 	payload := Login{
 		Act: user.Account,

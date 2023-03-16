@@ -8,11 +8,11 @@ import (
 	"testing"
 )
 
-func TestGetTokne(t *testing.T) {
+func TestGetToken(t *testing.T) {
 	if cfg, err := config.GetConfig(".."); err != nil {
 		log.Println(err)
 	} else {
-		fmt.Println(client.GetTokne(cfg.UserConfig))
+		fmt.Println(client.GetToken(cfg.UserConfig))
 	}
 }
 
@@ -22,7 +22,7 @@ func TestGetSaveSaets(t *testing.T) {
 	} else {
 		fmt.Println(client.GetSaveSaets(
 			cfg.UserConfig.Account,
-			client.GetTokne(cfg.UserConfig)))
+			client.GetToken(cfg.UserConfig)))
 	}
 }
 func TestGetSaveSeats(t *testing.T) {
@@ -31,7 +31,7 @@ func TestGetSaveSeats(t *testing.T) {
 	} else {
 		fmt.Println(client.GetSaveSeats(
 			cfg.UserConfig.Account,
-			client.GetTokne(cfg.UserConfig),
+			client.GetToken(cfg.UserConfig),
 			cfg.RestaurantConfig))
 	}
 }
@@ -43,12 +43,12 @@ func TestSaveBooking(t *testing.T) {
 	} else {
 		fmt.Println(client.GetSaveSeats(
 			cfg.UserConfig.Account,
-			client.GetTokne(cfg.UserConfig),
+			client.GetToken(cfg.UserConfig),
 			cfg.RestaurantConfig))
 
 		fmt.Println(client.SaveBooking(
 			cfg.UserConfig.Account,
-			client.GetTokne(cfg.UserConfig),
+			client.GetToken(cfg.UserConfig),
 			cfg.RestaurantConfig))
 	}
 }
